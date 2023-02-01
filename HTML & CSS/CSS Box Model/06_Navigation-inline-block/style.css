@@ -1,0 +1,18 @@
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+
+
+header *{
+    display: inline-block;
+}
+
+header {
+    border-bottom: 1px solid;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+}
