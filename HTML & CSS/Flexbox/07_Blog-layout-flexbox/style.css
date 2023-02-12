@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(238, 238, 238);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.page {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+div.page p {
+    line-height: 1.6em;
+}
+
+img {
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    border: 4px solid black;
+    /* margin: 20px; */
+    /* width: 160px; */
+}
+
+#img1 {
+    float: right;
+    /* height: 180px; */
+    margin: 0 0 24px 24px;
+}
+
+#img2 {
+    float:left;
+    margin: 0 20px 20px 0;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    float: right;
+    width: 320px;
+    font-style: italic;
+    border-left: lightgray 4px solid;
+    padding-left: 36px;
+}
+
+#author-name {
+    text-align: right;
+}
+
+a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+header>p {
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header {
+    border-bottom: 4px solid black;
+}
+
+section {
+    width: 810px;
+}
+
+section:nth-of-type(1) {
+    display: flex;
+    width: 1060px;
+}
+
+aside{
+    margin-left: 100px;
+}

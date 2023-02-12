@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+div.container {
+    max-width: 65vw;
+}
+
+span {
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 20px;
+}
+
+div, section {
+    display: flex;
+    align-items: center;
+}
+
+section {
+    flex-direction: column;
+}
+
+.workweek, .workdays, .weekend, .weekenddays {
+    width: 500px;
+    height: 100px;
+}
+
+.workday {
+    height: 100px;
+    width: 100px;
+    font-size: 10px;
+}
+
+.weekendday {
+    height: 100px;
+    width: 250px;
+    font-size: 10px;
+}
+
+.notes *{
+    height: 200px;
+    width: 150px;
+    padding-top: 8px;
+}

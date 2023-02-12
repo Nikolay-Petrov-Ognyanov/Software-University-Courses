@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 238, 238);
+    height: 100vh;
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+footer {
+    color: rgb(255, 255, 255);
+    background-color: rgb(102, 102, 102);
+    position: sticky;
+}
+
+header, main {
+    margin: 0 2vw;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+footer>p {
+    margin-left: 2vw;
+}
