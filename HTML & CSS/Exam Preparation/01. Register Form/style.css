@@ -1,0 +1,86 @@
+@import url("https: //fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+html {
+    font-family: Mulish, sans-serif;
+    background-image: url("./images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 40%;
+    height: 60%;
+    background-image: url("./images/form-background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 5%;
+}
+
+form {
+    height: 90%;
+    width: 50%;
+    padding-top: 4%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.names-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 2% 9%;
+    gap: 4%;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 9.4%;
+}
+
+.names-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.group>input,
+.names-group>input {
+    border-radius: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    padding-left: 9.4%;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    border-radius: 25px;
+    height: 30px;
+    width: 120px;
+    color: white;
+    background-color: brown;
+}
+
+label, p{
+    color: gray;
+}
+
+p {
+    font-size: small;
+}

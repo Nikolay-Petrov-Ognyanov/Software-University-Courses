@@ -1,0 +1,189 @@
+@import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
+
+body {
+    width: 100rem;
+    margin: 0 auto;
+    font-family: Roboto, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Abril Fatface", cursive;
+    color: #363434;
+}
+
+p {
+    font-size: 1.4rem;
+    color: #363434;
+}
+
+i {
+    margin-right: 1rem;
+}
+
+.image {
+    /* display: inline-block; */
+    background-image: url("./image/image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 77rem;
+    width: 100rem;
+}
+
+.interior-design {
+    border-radius: .2rem;
+    display: inline-block;
+    margin: 3rem 4rem;
+    box-shadow: 0 0 2rem black;
+    padding: 1rem 2rem;
+    height: 17rem;
+    width: 18rem;
+    position: absolute;
+}
+
+.interior-design h1 {
+    font-size: 3.5rem;
+    width: 60%;
+    padding-bottom: 1.5rem;
+    border-bottom: .2rem solid #f2f0f3;
+}
+
+.interior-design p {
+    margin-top: -1.5rem;
+    font-weight: normal;
+    font-size: 1.4rem;
+}
+
+.featured-projects {
+    border-radius: .2rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #9c938c, #c9c7c6);
+    height: 25rem;
+    width: 30rem;
+    margin-top: 22rem;
+    margin-left: 67.5rem;
+    position: relative;
+}
+
+.featured-projects>p.quote {
+    font-size: 7rem;
+    position: relative;
+    top: -4rem;
+    right: 1rem;
+    text-align: right;
+    color:#8d8581;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    text-shadow: 0 0 .2rem black;
+}
+
+.featured-projects>p.ptext {
+    width: 90%;
+    position: relative;
+    bottom: 11rem;
+    left: 1.4rem;
+    font-size: 1.4rem;
+    text-align: right;
+    text-shadow: 0 0 1rem black;
+    color: #f2f0f3;
+}
+
+.text>div {
+    display: inline-block;
+}
+
+.text {
+    display: flex;  
+    background-color: #f2f0f3;
+    height: 64rem;
+}
+
+.left {
+    width: 70%;
+    margin: 6rem 0;
+}
+
+.right {
+    width: 30%;
+    background-color: #bab1ad;
+}
+
+.text h1 {
+    font-size: 3rem;
+    margin: 0 0 2rem 0;
+}
+
+.left span {
+    font-weight: bold;
+}
+
+.left div {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.services p:last-of-type{
+    margin-bottom: 5rem;
+}
+
+form {
+    margin: 2rem 0rem;
+}
+
+form input {
+    font-size: 1.2rem;
+    width: 23rem;
+    margin-right: 1rem;
+    height: 3.2rem;
+    background-color: #BAB1AD;
+    color: #f2f0f3;;
+    padding: 0 1rem;
+    border-radius: .3rem;
+}
+
+form button {
+    font-size: 1.2rem;
+    height: 3.2rem;
+    border-radius: .3rem;
+    border: none;
+    background-color: #67784d ;
+    width: 10rem;
+    color: #f2f0f3;
+}
+
+.left > h1 {
+    padding-left: 9.5rem;
+    border-bottom: .15rem solid black;
+}
+
+.contact p {
+    display: inline-block;
+    margin: 0.35rem 0.2rem;
+}
+
+.right .num {
+    color: #f2f0f3;
+    font-size: 7rem;
+    margin: 7rem 2rem -2rem 2rem;
+    font-weight: 100;
+}
+
+.right .firstnum {
+    margin-top: 5rem;
+}
+
+.right .txt{
+    margin: 1.6rem 2rem -2rem 2rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.contact span {
+    font-style: italic;
+}
