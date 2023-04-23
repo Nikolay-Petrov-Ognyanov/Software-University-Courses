@@ -1,0 +1,56 @@
+const homeController = require("../controllers/homeController")
+
+function isUser() {
+    return (req, res, next) => {
+        if (req.user) {
+            next()
+        } else {
+            //res.redirect("/auth/login")
+
+            res.render("404", {
+                title: "404 Page Not Found",
+                user: req.user
+
+            })
+        }
+    }
+}
+
+function isGuest() {
+    return (req, res, next) => {
+        if (req.user) {
+            //res.redirect("/")
+
+            res.render("404", {
+                title: "404 Page Not Found",
+                user: req.user
+
+            })
+        } else {
+            next()
+        }
+    }
+}
+
+function isOwner() {
+    return (req, res, next) => {
+        if (req.user && res.locals.blog.owner.toString() == req.user._id.toString()) {
+            res.locals.isOwner = true
+            next()
+        } else {
+            //res.redirect("/auth/login")
+
+            res.render("404", {
+                title: "404 Page Not Found",
+                user: req.user
+
+            })
+        }
+    }
+}
+
+module.exports = {
+    isUser,
+    isGuest,
+    isOwner
+}

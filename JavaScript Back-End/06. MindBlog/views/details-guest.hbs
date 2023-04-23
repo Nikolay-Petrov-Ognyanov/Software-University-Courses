@@ -1,0 +1,22 @@
+<div class="details-container">
+    {{#with blog}}
+    <div class="details-container-image">
+        <img src="{{imageUrl}}">
+    </div>
+    <div class="details-container-info">
+        <h2>{{title}}</h2>
+        <h3>{{category}}</h3>
+        <h3>By: {{email}}</h3>
+        <!--If there are followers-->
+        {{#if followList}}
+        <h4>Follow By: {{followList}}</h4>
+        <!--If there are no followers-->
+        {{else}}
+        <h4>There are no followers yet!</h4>
+        {{/if}}
+    </div>
+    <div class="details-container-content">
+        <p>{{content}}</p>
+    </div>
+    {{/with}}
+</div>
