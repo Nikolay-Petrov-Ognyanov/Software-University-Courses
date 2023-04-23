@@ -1,0 +1,32 @@
+<section class="details-page">
+    <h1>Details</h1>
+    {{#with book}}
+    <article class="details-card">
+
+        <article class="details-card-text">
+            <h2>Title:<br>{{title}}</h2>
+            <h3>Author: {{author}}</h3>
+            <h3>Stars: {{stars}}</h3>
+            <h3>Genre: {{genre}}</h3>
+            <h3>Review: {{review}}
+            </h3>
+
+            <div class="buttons">
+                {{#if isWished}}
+                <!-- logged in user who has already wished book-->
+                <p class="wish-pub">You already added the book to your wish list</p>
+                {{else}}
+                <!-- logged in user who has not yet wished book-->
+                <a href="/book/{{_id}}/wish" class="btn-wish">Wish to read</a>
+                {{/if}}
+            </div>
+
+        </article>
+
+        <article class="details-card-image">
+            <img src="{{imageUrl}}">
+        </article>
+
+    </article>
+    {{/with}}
+</section>
