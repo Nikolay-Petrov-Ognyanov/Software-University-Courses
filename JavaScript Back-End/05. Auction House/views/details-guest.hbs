@@ -1,0 +1,31 @@
+<section id="catalog-section">
+    {{#with auction}}
+
+    <h1 class="item">
+        {{title}}
+    </h1>
+    <div class="item padded">
+
+        <div class="layout right large">
+
+            <div class="col">
+                <img src="{{imageUrl}}" class="img-large">
+            </div>
+
+            <div class="content pad-med">
+
+                <p>In category: <strong>{{category}}</strong></p>
+                <p>{{description}}</p>
+
+                <div class="align-center">
+                    <div>
+                        Current price: $<strong>{{price}}</strong>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>Listed by {{user.firstName}} {{user.lastName}}</footer>
+    </div>{{/with}}
+</section>

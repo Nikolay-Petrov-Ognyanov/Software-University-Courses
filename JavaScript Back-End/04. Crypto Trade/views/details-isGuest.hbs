@@ -1,0 +1,17 @@
+<section id="details-info">
+    {{#with crypto}}
+    <h1>Details</h1>
+    <div class="coin-image">
+        <img src="./static/images/bitcoin.png">
+    </div>
+
+    <div class="coin-info">
+        <div class="coin-text">
+            <h1 id="name">{{name}}</h1>
+            <h3 id="payment">Payment method: {{payment}}</h3>
+            <p id="price"><span>Price: ${{price}}</span></p>
+            <p id="description">{{description}}</p>
+        </div>
+    </div>
+    {{/with}}
+</section>
